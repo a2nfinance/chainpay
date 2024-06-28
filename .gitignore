@@ -38,3 +38,6 @@ next-env.d.ts
 
 # MACOS
 .DS_Store
+
+# other
+package-lock.json

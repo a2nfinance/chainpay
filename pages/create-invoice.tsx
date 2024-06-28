@@ -12,14 +12,15 @@ export default function CreateInvoice() {
   async function fetchClientList() {
     let customersReq = await fetch("/api/quickbooks-customers");
     let customers: any[] = await customersReq.json();
-
+    console.log("Customers:", customers);
+    console.log("NEXT_PUBLIC_USE_QUICKBOOKS:", process.env.NEXT_PUBLIC_USE_QUICKBOOKS)
     if (formRef.current) {
       if (wallet && requestNetwork) {
         formRef.current.signer = wallet.accounts[0].address;
         formRef.current.requestNetwork = requestNetwork;
         formRef.current.clientList = customers;
         formRef.current.config = config;
-        formRef.current.useQuickBooks = !!process.env.NEXT_PUBLIC_USE_QUICK_BOOKS;
+        formRef.current.useQuickBooks = !!process.env.NEXT_PUBLIC_USE_QUICKBOOKS;
       }
     }
   }

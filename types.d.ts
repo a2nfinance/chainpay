@@ -29,4 +29,6 @@ interface CreateInvoiceFormProps extends HTMLElement {
   config: IConfig;
   signer: string;
   requestNetwork: RequestNetwork;
+  clientList: any[],
+  useQuickBooks: boolean
 }

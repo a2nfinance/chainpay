@@ -3,15 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 9090",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 9090",
     "lint": "next lint"
   },
   "dependencies": {
-    "@requestnetwork/create-invoice-form": "^0.5.0",
-    "@requestnetwork/invoice-dashboard": "^0.4.0",
-    "@requestnetwork/request-client.js": "0.45.0",
+    "@requestnetwork/request-client.js": "^0.47.1-next.2045",
     "@requestnetwork/shared": "^0.4.0",
     "@requestnetwork/web3-signature": "0.5.0",
     "@web3-onboard/coinbase": "^2.2.7",
@@ -23,15 +21,18 @@
     "@web3-onboard/trezor": "^2.4.4",
     "@web3-onboard/trust": "^2.0.4",
     "@web3-onboard/walletconnect": "^2.5.5",
+    "dotenv": "^16.4.5",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "simple-oauth2": "^5.0.1",
     "viem": "^2.9.15"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/simple-oauth2": "^5.0.7",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
