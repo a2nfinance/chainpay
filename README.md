@@ -48,7 +48,13 @@ Before deploying, ensure you have created a `.env` file in the root of your proj
 | NEXT_PUBLIC_RPC_URL_ETHEREUM          | RPC URL for Ethereum network   | ✅       |
 | NEXT_PUBLIC_RPC_URL_POLYGON           | RPC URL for Polygon network    | ✅       |
 | NEXT_PUBLIC_RPC_URL_SEPOLIA           | RPC URL for Sepolia network    | ✅       |
-
+| QUICKBOOKS_CLIENT_ID                  | QuickBooks app client ID       | ✅       |
+| QUICKBOOKS_SECRET_KEY                 | QuickBooks app secret key      | ✅       |
+| QUICKBOOKS_ACCESS_TOKEN               | QuickBooks API access token    | ✅       |
+| QUICKBOOKS_API_URL                    | QuickBooks API URL             | ✅       |
+| QUICKBOOKS_ENVIRONMENT                | QuickBooks environment         | ✅       |
+| QUICKBOOKS_REFRESH_TOKEN              | QuickBooks refresh token    | ✅       |
+| NEXT_PUBLIC_USE_QUICKBOOKS            | Enable client list feature using QuickBooks API    | ✅       |
 ## Configuration
 
 In your next.config.js file, ensure you have the following configuration:
