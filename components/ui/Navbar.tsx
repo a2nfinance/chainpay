@@ -42,7 +42,7 @@ const Navbar = () => {
         href="https://request.network/"
       >
         <img
-          src="assets/logo.svg"
+          src="assets/logo.png"
           alt="Request Network Logo"
           className="w-[120px]"
         />
